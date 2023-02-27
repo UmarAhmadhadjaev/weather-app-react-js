@@ -34,7 +34,7 @@ function App() {
       })
       .catch((error) => console.log(error));
     fetch(
-      `https://api.unsplash.com/search/photos?query=${locations}&client_id={APP_ID}`
+      `https://api.unsplash.com/search/photos?query=${locations}&client_id=${APP_ID}`
     )
       .then((res) => {
         if (res.ok) {
